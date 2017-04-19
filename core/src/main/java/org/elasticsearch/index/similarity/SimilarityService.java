@@ -50,6 +50,7 @@ public final class SimilarityService extends AbstractIndexComponent {
         defaults.put("boolean", BooleanSimilarityProvider::new);
         buildIn.put("classic", ClassicSimilarityProvider::new);
         buildIn.put("BM25", BM25SimilarityProvider::new);
+        buildIn.put("TF", TFSimilarityProvider::new);
         buildIn.put("DFR", DFRSimilarityProvider::new);
         buildIn.put("IB", IBSimilarityProvider::new);
         buildIn.put("LMDirichlet", LMDirichletSimilarityProvider::new);
